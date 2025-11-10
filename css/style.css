@@ -17,4 +17,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* backdrop-filter not supported by Atomizer - added here */
+header {
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
 /* All other styling is done via Atomizer utility classes */
