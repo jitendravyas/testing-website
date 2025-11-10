@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Dummy testing website with Atomizer CSS",
   "scripts": {
-    "build:atomic": "atomizer -o css/atomic.css *.html _includes/*.html _layouts/*.html"
+    "build:atomic": "atomizer -c atomizer.config.js -o css/atomic.css *.html _includes/*.html _layouts/*.html"
   },
   "devDependencies": {
-    "atomizer": "^3.5.0"
+    "atomizer": "^3.30.0"
   }
 }
