@@ -1,389 +1,202 @@
 ---
 layout: default
 title: SaaS Landing
-custom_css: |
-    .hero {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                color: white;
-                padding: 5rem 0;
-                text-align: center;
-            }
-            .hero h1 {
-                font-size: 3rem;
-                color: white;
-                margin-bottom: 1.5rem;
-            }
-            .hero p {
-                font-size: 1.25rem;
-                margin-bottom: 2rem;
-                max-width: 600px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .hero .cta-buttons {
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            .hero .btn {
-                background: white;
-                color: #667eea;
-                font-weight: 600;
-            }
-            .hero .btn:hover {
-                background: #f8f9fa;
-            }
-            .hero .btn-secondary {
-                background: transparent;
-                color: white;
-                border: 2px solid white;
-            }
-            .hero .btn-secondary:hover {
-                background: rgba(255, 255, 255, 0.1);
-            }
-            .features-section {
-                padding: 4rem 0;
-                background: white;
-            }
-            .feature-card {
-                text-align: center;
-                padding: 2rem;
-            }
-            .feature-icon {
-                width: 80px;
-                height: 80px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 2.5rem;
-                margin: 0 auto 1.5rem;
-                color: white;
-            }
-            .pricing-section {
-                padding: 4rem 0;
-                background: #f8f9fa;
-            }
-            .pricing-card {
-                background: white;
-                border-radius: 8px;
-                padding: 2rem;
-                text-align: center;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                transition: transform 0.3s;
-            }
-            .pricing-card:hover {
-                transform: translateY(-10px);
-            }
-            .pricing-card.featured {
-                border: 3px solid #667eea;
-                position: relative;
-            }
-            .pricing-card.featured::before {
-                content: "POPULAR";
-                position: absolute;
-                top: -15px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: #667eea;
-                color: white;
-                padding: 0.5rem 1.5rem;
-                border-radius: 20px;
-                font-size: 0.875rem;
-                font-weight: bold;
-            }
-            .pricing-card h3 {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-            .pricing-card .price {
-                font-size: 3rem;
-                color: #667eea;
-                font-weight: bold;
-                margin-bottom: 0.5rem;
-            }
-            .pricing-card .price span {
-                font-size: 1rem;
-                color: #7f8c8d;
-            }
-            .pricing-card ul {
-                list-style: none;
-                margin: 2rem 0;
-                text-align: left;
-            }
-            .pricing-card ul li {
-                padding: 0.5rem 0;
-                border-bottom: 1px solid #eee;
-            }
-            .pricing-card ul li:before {
-                content: "✓ ";
-                color: #27ae60;
-                font-weight: bold;
-                margin-right: 0.5rem;
-            }
-            .testimonials-section {
-                padding: 4rem 0;
-                background: white;
-            }
-            .testimonial-card {
-                background: #f8f9fa;
-                padding: 2rem;
-                border-radius: 8px;
-                border-left: 4px solid #667eea;
-            }
-            .testimonial-author {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                margin-top: 1.5rem;
-            }
-            .testimonial-avatar {
-                width: 50px;
-                height: 50px;
-                background: #667eea;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-weight: bold;
-            }
-            .cta-section {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                color: white;
-                padding: 4rem 0;
-                text-align: center;
-            }
-            .cta-section h2 {
-                color: white;
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
-            .stats-section {
-                padding: 3rem 0;
-                background: #2c3e50;
-                color: white;
-                text-align: center;
-            }
-            .stat-item {
-                padding: 1rem;
-            }
-            .stat-number {
-                font-size: 3rem;
-                font-weight: bold;
-                color: #3498db;
-            }
-            .stat-label {
-                font-size: 1rem;
-                color: #ecf0f1;
-            }
-            @media (max-width: 768px) {
-                .hero h1 {
-                    font-size: 2rem;
-                }
-                .cta-section h2 {
-                    font-size: 1.75rem;
-                }
-            }
 ---
 
 <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Transform Your Business with CloudFlow</h1>
-            <p>The all-in-one platform that helps teams collaborate, manage projects, and deliver results faster than ever before.</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn">Start Free Trial</a>
-                <a href="#" class="btn btn-secondary">Watch Demo</a>
+<section class="Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) C(#fff) P(80px,0) Ta(c)">
+    <div class="Maw(980px) M(0,a) P(0,22px)">
+        <h1 class="Fz(48px) Lh(1.08349) Fw(600) C(#fff) Mb(24px)">Transform Your Business with CloudFlow</h1>
+        <p class="Fz(21px) Lh(1.38095) Fw(400) C(#fff) Mb(32px) Maw(600px) Mstart(a) Mend(a)">The all-in-one platform that helps teams collaborate, manage projects, and deliver results faster than ever before.</p>
+        <div class="D(f) Gap(16px) Jc(c) Flw(w)">
+            <a href="#" class="D(ib) P(12px,22px) Bgc(#fff) C(#667eea) Td(n) Bdrs(980px) Fz(17px) Lh(1.17648) Fw(600) Cur(p) Ta(c) Trs(background-color,.2s,ease)">Start Free Trial</a>
+            <a href="#" class="D(ib) P(12px,22px) Bgc(t) C(#fff) Bd(2px,s,#fff) Td(n) Bdrs(980px) Fz(17px) Lh(1.17648) Fw(400) Cur(p) Ta(c) Trs(background-color,.2s,ease)">Watch Demo</a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="P(48px,0) Bgc(#1d1d1f) C(#fff) Ta(c)">
+    <div class="Maw(980px) M(0,a) P(0,22px)">
+        <div class="D(g) Gtc(repeat(4,1fr)) Gap(32px)">
+            <div class="P(16px)">
+                <div class="Fz(48px) Fw(b) C(#0071e3) Mb(8px)">50K+</div>
+                <div class="Fz(17px) C(#f5f5f7)">Active Users</div>
+            </div>
+            <div class="P(16px)">
+                <div class="Fz(48px) Fw(b) C(#0071e3) Mb(8px)">99.9%</div>
+                <div class="Fz(17px) C(#f5f5f7)">Uptime</div>
+            </div>
+            <div class="P(16px)">
+                <div class="Fz(48px) Fw(b) C(#0071e3) Mb(8px)">150+</div>
+                <div class="Fz(17px) C(#f5f5f7)">Countries</div>
+            </div>
+            <div class="P(16px)">
+                <div class="Fz(48px) Fw(b) C(#0071e3) Mb(8px)">4.9/5</div>
+                <div class="Fz(17px) C(#f5f5f7)">User Rating</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="grid grid-4">
-                <div class="stat-item">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Active Users</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99.9%</div>
-                    <div class="stat-label">Uptime</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Countries</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">4.9/5</div>
-                    <div class="stat-label">User Rating</div>
-                </div>
+<!-- Features Section -->
+<section class="P(64px,0) Bgc(#fff)">
+    <div class="Maw(980px) M(0,a) P(0,22px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Ta(c) Mb(16px)">Everything You Need to Succeed</h2>
+        <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73) Ta(c) Mb(48px)">Powerful features designed to streamline your workflow</p>
+
+        <div class="D(g) Gap(32px) Gtc(repeat(auto-fit,minmax(280px,1fr)))">
+            <div class="Ta(c) P(32px)">
+                <div class="W(80px) H(80px) Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) Bdrs(50%) D(f) Ai(c) Jc(c) Fz(40px) M(0,a,24px,a) C(#fff)">🚀</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(12px)">Lightning Fast</h3>
+                <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73)">Experience blazing-fast performance with our optimized infrastructure built for speed.</p>
+            </div>
+            <div class="Ta(c) P(32px)">
+                <div class="W(80px) H(80px) Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) Bdrs(50%) D(f) Ai(c) Jc(c) Fz(40px) M(0,a,24px,a) C(#fff)">🔒</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(12px)">Secure & Reliable</h3>
+                <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73)">Enterprise-grade security with 256-bit encryption and SOC 2 Type II compliance.</p>
+            </div>
+            <div class="Ta(c) P(32px)">
+                <div class="W(80px) H(80px) Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) Bdrs(50%) D(f) Ai(c) Jc(c) Fz(40px) M(0,a,24px,a) C(#fff)">📊</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(12px)">Analytics Dashboard</h3>
+                <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73)">Real-time insights and analytics to make data-driven decisions for your business.</p>
+            </div>
+            <div class="Ta(c) P(32px)">
+                <div class="W(80px) H(80px) Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) Bdrs(50%) D(f) Ai(c) Jc(c) Fz(40px) M(0,a,24px,a) C(#fff)">🤝</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(12px)">Team Collaboration</h3>
+                <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73)">Work seamlessly with your team using built-in collaboration tools and integrations.</p>
+            </div>
+            <div class="Ta(c) P(32px)">
+                <div class="W(80px) H(80px) Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) Bdrs(50%) D(f) Ai(c) Jc(c) Fz(40px) M(0,a,24px,a) C(#fff)">🔄</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(12px)">Automated Workflows</h3>
+                <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73)">Save time with intelligent automation that handles repetitive tasks for you.</p>
+            </div>
+            <div class="Ta(c) P(32px)">
+                <div class="W(80px) H(80px) Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) Bdrs(50%) D(f) Ai(c) Jc(c) Fz(40px) M(0,a,24px,a) C(#fff)">💬</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(12px)">24/7 Support</h3>
+                <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73)">Get help whenever you need it with our round-the-clock customer support team.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <h2 class="text-center">Everything You Need to Succeed</h2>
-            <p class="text-center mb-2">Powerful features designed to streamline your workflow</p>
+<!-- Pricing Section -->
+<section class="P(64px,0) Bgc(#f5f5f7)">
+    <div class="Maw(980px) M(0,a) P(0,22px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Ta(c) Mb(16px)">Simple, Transparent Pricing</h2>
+        <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73) Ta(c) Mb(48px)">Choose the perfect plan for your needs</p>
 
-            <div class="grid grid-3">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Experience blazing-fast performance with our optimized infrastructure built for speed.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure & Reliable</h3>
-                    <p>Enterprise-grade security with 256-bit encryption and SOC 2 Type II compliance.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Analytics Dashboard</h3>
-                    <p>Real-time insights and analytics to make data-driven decisions for your business.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Team Collaboration</h3>
-                    <p>Work seamlessly with your team using built-in collaboration tools and integrations.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Automated Workflows</h3>
-                    <p>Save time with intelligent automation that handles repetitive tasks for you.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💬</div>
-                    <h3>24/7 Support</h3>
-                    <p>Get help whenever you need it with our round-the-clock customer support team.</p>
-                </div>
+        <div class="D(g) Gap(24px) Gtc(repeat(auto-fit,minmax(300px,1fr)))">
+            <div class="Bgc(#fff) Bdrs(18px) P(32px) Ta(c) Bxsh(2px,4px,12px,rgba(0,0,0,0.1)) Trs(transform,.3s,ease)">
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(16px)">Starter</h3>
+                <div class="Fz(48px) C(#667eea) Fw(b) Mb(8px)">$19<span class="Fz(17px) C(#6e6e73)">/month</span></div>
+                <p class="Fz(17px) C(#6e6e73) Mb(32px)">Perfect for individuals and small teams</p>
+                <ul class="Lis(n) Mb(32px) Ta(start)">
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Up to 5 users</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ 10 GB storage</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Basic features</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Email support</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Mobile app access</li>
+                </ul>
+                {% include components/button.html url="#" text="Get Started" variant="secondary" %}
+            </div>
+
+            <div class="Bgc(#fff) Bdrs(18px) P(32px) Ta(c) Bxsh(2px,4px,12px,rgba(0,0,0,0.1)) Trs(transform,.3s,ease) Bd(3px,s,#667eea) Pos(r)">
+                <div class="Pos(a) T(-15px) Start(50%) Translatex(-50%) Bgc(#667eea) C(#fff) P(8px,24px) Bdrs(20px) Fz(14px) Fw(b)">POPULAR</div>
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(16px)">Professional</h3>
+                <div class="Fz(48px) C(#667eea) Fw(b) Mb(8px)">$49<span class="Fz(17px) C(#6e6e73)">/month</span></div>
+                <p class="Fz(17px) C(#6e6e73) Mb(32px)">Best for growing businesses</p>
+                <ul class="Lis(n) Mb(32px) Ta(start)">
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Up to 20 users</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ 100 GB storage</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ All features included</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Priority support</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Advanced analytics</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ API access</li>
+                </ul>
+                {% include components/button.html url="#" text="Get Started" %}
+            </div>
+
+            <div class="Bgc(#fff) Bdrs(18px) P(32px) Ta(c) Bxsh(2px,4px,12px,rgba(0,0,0,0.1)) Trs(transform,.3s,ease)">
+                <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(16px)">Enterprise</h3>
+                <div class="Fz(48px) C(#667eea) Fw(b) Mb(8px)">$99<span class="Fz(17px) C(#6e6e73)">/month</span></div>
+                <p class="Fz(17px) C(#6e6e73) Mb(32px)">For large organizations</p>
+                <ul class="Lis(n) Mb(32px) Ta(start)">
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Unlimited users</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Unlimited storage</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Custom features</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ 24/7 phone support</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ Dedicated account manager</li>
+                    <li class="P(8px,0) Bdb(1px,s,#f5f5f7) Fz(17px) C(#1d1d1f)">✓ SLA guarantee</li>
+                </ul>
+                {% include components/button.html url="#" text="Contact Sales" variant="secondary" %}
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Pricing Section -->
-    <section class="pricing-section">
-        <div class="container">
-            <h2 class="text-center">Simple, Transparent Pricing</h2>
-            <p class="text-center mb-2">Choose the perfect plan for your needs</p>
+<!-- Testimonials Section -->
+<section class="P(64px,0) Bgc(#fff)">
+    <div class="Maw(980px) M(0,a) P(0,22px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Ta(c) Mb(16px)">What Our Customers Say</h2>
+        <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73) Ta(c) Mb(48px)">Join thousands of satisfied customers worldwide</p>
 
-            <div class="grid grid-3">
-                <div class="pricing-card">
-                    <h3>Starter</h3>
-                    <div class="price">$19<span>/month</span></div>
-                    <p>Perfect for individuals and small teams</p>
-                    <ul>
-                        <li>Up to 5 users</li>
-                        <li>10 GB storage</li>
-                        <li>Basic features</li>
-                        <li>Email support</li>
-                        <li>Mobile app access</li>
-                    </ul>
-                    <button class="btn btn-secondary">Get Started</button>
-                </div>
-
-                <div class="pricing-card featured">
-                    <h3>Professional</h3>
-                    <div class="price">$49<span>/month</span></div>
-                    <p>Best for growing businesses</p>
-                    <ul>
-                        <li>Up to 20 users</li>
-                        <li>100 GB storage</li>
-                        <li>All features included</li>
-                        <li>Priority support</li>
-                        <li>Advanced analytics</li>
-                        <li>API access</li>
-                    </ul>
-                    <button class="btn">Get Started</button>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="price">$99<span>/month</span></div>
-                    <p>For large organizations</p>
-                    <ul>
-                        <li>Unlimited users</li>
-                        <li>Unlimited storage</li>
-                        <li>Custom features</li>
-                        <li>24/7 phone support</li>
-                        <li>Dedicated account manager</li>
-                        <li>SLA guarantee</li>
-                    </ul>
-                    <button class="btn btn-secondary">Contact Sales</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="text-center">What Our Customers Say</h2>
-            <p class="text-center mb-2">Join thousands of satisfied customers worldwide</p>
-
-            <div class="grid grid-2">
-                <div class="testimonial-card">
-                    <p>"CloudFlow has completely transformed how our team works together. The collaboration features are outstanding, and the performance is incredible. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SM</div>
-                        <div>
-                            <strong>Sarah Mitchell</strong><br>
-                            <span style="color: #7f8c8d;">CEO, TechStart Inc.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>"We've tried many solutions, but CloudFlow stands out with its ease of use and powerful features. The support team is also fantastic and always ready to help."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">JC</div>
-                        <div>
-                            <strong>James Chen</strong><br>
-                            <span style="color: #7f8c8d;">Product Manager, InnovateCo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>"The analytics dashboard gives us insights we never had before. CloudFlow has helped us make better decisions and grow our business significantly."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">EJ</div>
-                        <div>
-                            <strong>Emily Johnson</strong><br>
-                            <span style="color: #7f8c8d;">Marketing Director, GrowthLabs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>"Security was our top concern, and CloudFlow exceeded our expectations. The platform is reliable, secure, and scales perfectly with our needs."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">RK</div>
-                        <div>
-                            <strong>Robert Kim</strong><br>
-                            <span style="color: #7f8c8d;">CTO, SecureData Systems</span>
-                        </div>
+        <div class="D(g) Gap(24px) Gtc(repeat(auto-fit,minmax(400px,1fr)))">
+            <div class="Bgc(#f5f5f7) P(32px) Bdrs(18px) Bdl(4px,s,#667eea)">
+                <p class="Fz(17px) Lh(1.47059) C(#1d1d1f) Mb(24px)">"CloudFlow has completely transformed how our team works together. The collaboration features are outstanding, and the performance is incredible. Highly recommended!"</p>
+                <div class="D(f) Ai(c) Gap(16px)">
+                    <div class="W(50px) H(50px) Bgc(#667eea) Bdrs(50%) D(f) Ai(c) Jc(c) C(#fff) Fw(b) Fxs(0)">SM</div>
+                    <div>
+                        <div class="Fw(600) C(#1d1d1f)">Sarah Mitchell</div>
+                        <div class="Fz(14px) C(#6e6e73)">CEO, TechStart Inc.</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p style="font-size: 1.25rem; margin-bottom: 2rem;">Join thousands of teams already using CloudFlow</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn" style="background: white; color: #667eea;">Start Free Trial</a>
-                <a href="#" class="btn btn-secondary" style="border: 2px solid white;">Contact Sales</a>
+            <div class="Bgc(#f5f5f7) P(32px) Bdrs(18px) Bdl(4px,s,#667eea)">
+                <p class="Fz(17px) Lh(1.47059) C(#1d1d1f) Mb(24px)">"We've tried many solutions, but CloudFlow stands out with its ease of use and powerful features. The support team is also fantastic and always ready to help."</p>
+                <div class="D(f) Ai(c) Gap(16px)">
+                    <div class="W(50px) H(50px) Bgc(#667eea) Bdrs(50%) D(f) Ai(c) Jc(c) C(#fff) Fw(b) Fxs(0)">JC</div>
+                    <div>
+                        <div class="Fw(600) C(#1d1d1f)">James Chen</div>
+                        <div class="Fz(14px) C(#6e6e73)">Product Manager, InnovateCo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Bgc(#f5f5f7) P(32px) Bdrs(18px) Bdl(4px,s,#667eea)">
+                <p class="Fz(17px) Lh(1.47059) C(#1d1d1f) Mb(24px)">"The analytics dashboard gives us insights we never had before. CloudFlow has helped us make better decisions and grow our business significantly."</p>
+                <div class="D(f) Ai(c) Gap(16px)">
+                    <div class="W(50px) H(50px) Bgc(#667eea) Bdrs(50%) D(f) Ai(c) Jc(c) C(#fff) Fw(b) Fxs(0)">EJ</div>
+                    <div>
+                        <div class="Fw(600) C(#1d1d1f)">Emily Johnson</div>
+                        <div class="Fz(14px) C(#6e6e73)">Marketing Director, GrowthLabs</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Bgc(#f5f5f7) P(32px) Bdrs(18px) Bdl(4px,s,#667eea)">
+                <p class="Fz(17px) Lh(1.47059) C(#1d1d1f) Mb(24px)">"Security was our top concern, and CloudFlow exceeded our expectations. The platform is reliable, secure, and scales perfectly with our needs."</p>
+                <div class="D(f) Ai(c) Gap(16px)">
+                    <div class="W(50px) H(50px) Bgc(#667eea) Bdrs(50%) D(f) Ai(c) Jc(c) C(#fff) Fw(b) Fxs(0)">RK</div>
+                    <div>
+                        <div class="Fw(600) C(#1d1d1f)">Robert Kim</div>
+                        <div class="Fz(14px) C(#6e6e73)">CTO, SecureData Systems</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
+<!-- CTA Section -->
+<section class="Bgc(linear-gradient(135deg,#667eea_0%,#764ba2_100%)) C(#fff) P(64px,0) Ta(c)">
+    <div class="Maw(980px) M(0,a) P(0,22px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#fff) Mb(16px)">Ready to Get Started?</h2>
+        <p class="Fz(21px) Lh(1.38095) Fw(400) C(#fff) Mb(32px)">Join thousands of teams already using CloudFlow</p>
+        <div class="D(f) Gap(16px) Jc(c) Flw(w)">
+            <a href="#" class="D(ib) P(12px,22px) Bgc(#fff) C(#667eea) Td(n) Bdrs(980px) Fz(17px) Lh(1.17648) Fw(600) Cur(p) Ta(c) Trs(background-color,.2s,ease)">Start Free Trial</a>
+            <a href="#" class="D(ib) P(12px,22px) Bgc(t) C(#fff) Bd(2px,s,#fff) Td(n) Bdrs(980px) Fz(17px) Lh(1.17648) Fw(400) Cur(p) Ta(c) Trs(background-color,.2s,ease)">Contact Sales</a>
+        </div>
+    </div>
+</section>

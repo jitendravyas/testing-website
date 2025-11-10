@@ -1,462 +1,418 @@
 ---
 layout: default
 title: Tables
-custom_css: |
-    .table-section {
-                margin-bottom: 3rem;
-            }
-            .table-wrapper {
-                overflow-x: auto;
-            }
-            .status-badge {
-                padding: 0.25rem 0.75rem;
-                border-radius: 20px;
-                font-size: 0.875rem;
-                font-weight: 600;
-            }
-            .status-active {
-                background: #d4edda;
-                color: #155724;
-            }
-            .status-pending {
-                background: #fff3cd;
-                color: #856404;
-            }
-            .status-inactive {
-                background: #f8d7da;
-                color: #721c24;
-            }
-            .status-completed {
-                background: #d1ecf1;
-                color: #0c5460;
-            }
-            table.striped tbody tr:nth-child(even) {
-                background-color: #f8f9fa;
-            }
 ---
 
-<main>
-        <div class="content-wrapper">
-            <h1>Data Tables</h1>
-            <p>This page demonstrates various table layouts with dummy data for testing purposes.</p>
+<main class="Maw(980px) M(0,a) P(60px,22px)">
+    <h1 class="Fz(48px) Lh(1.08349) Fw(600) C(#1d1d1f) Ta(c) Mb(16px)">Data Tables</h1>
+    <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73) Ta(c) Mb(48px)">This page demonstrates various table layouts with dummy data for testing purposes.</p>
 
-            <!-- User Table -->
-            <div class="table-section">
-                <h2>User Management</h2>
-                <div class="table-wrapper">
-                    <table class="striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Role</th>
-                                <th>Status</th>
-                                <th>Joined Date</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>001</td>
-                                <td>John Smith</td>
-                                <td>john.smith@example.com</td>
-                                <td>Administrator</td>
-                                <td><span class="status-badge status-active">Active</span></td>
-                                <td>2023-01-15</td>
-                                <td>
-                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>002</td>
-                                <td>Sarah Johnson</td>
-                                <td>sarah.j@example.com</td>
-                                <td>Editor</td>
-                                <td><span class="status-badge status-active">Active</span></td>
-                                <td>2023-02-20</td>
-                                <td>
-                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>003</td>
-                                <td>Mike Davis</td>
-                                <td>mike.davis@example.com</td>
-                                <td>Viewer</td>
-                                <td><span class="status-badge status-pending">Pending</span></td>
-                                <td>2023-03-10</td>
-                                <td>
-                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>004</td>
-                                <td>Emily Brown</td>
-                                <td>emily.b@example.com</td>
-                                <td>Editor</td>
-                                <td><span class="status-badge status-active">Active</span></td>
-                                <td>2023-04-05</td>
-                                <td>
-                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>005</td>
-                                <td>David Wilson</td>
-                                <td>david.w@example.com</td>
-                                <td>Viewer</td>
-                                <td><span class="status-badge status-inactive">Inactive</span></td>
-                                <td>2023-05-18</td>
-                                <td>
-                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Sales Data Table -->
-            <div class="table-section">
-                <h2>Sales Report Q4 2024</h2>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Units Sold</th>
-                                <th>Revenue</th>
-                                <th>Growth</th>
-                                <th>Region</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wireless Headphones Pro</td>
-                                <td>1,245</td>
-                                <td>$161,835</td>
-                                <td style="color: #27ae60; font-weight: 600;">+15.3%</td>
-                                <td>North America</td>
-                            </tr>
-                            <tr>
-                                <td>Fitness Smartwatch</td>
-                                <td>2,108</td>
-                                <td>$421,589</td>
-                                <td style="color: #27ae60; font-weight: 600;">+22.7%</td>
-                                <td>Europe</td>
-                            </tr>
-                            <tr>
-                                <td>Ergonomic Keyboard</td>
-                                <td>876</td>
-                                <td>$78,832</td>
-                                <td style="color: #e74c3c; font-weight: 600;">-5.2%</td>
-                                <td>Asia Pacific</td>
-                            </tr>
-                            <tr>
-                                <td>Travel Backpack Pro</td>
-                                <td>1,532</td>
-                                <td>$84,259</td>
-                                <td style="color: #27ae60; font-weight: 600;">+8.9%</td>
-                                <td>North America</td>
-                            </tr>
-                            <tr>
-                                <td>Gaming Controller</td>
-                                <td>3,421</td>
-                                <td>$239,470</td>
-                                <td style="color: #27ae60; font-weight: 600;">+31.5%</td>
-                                <td>Global</td>
-                            </tr>
-                            <tr>
-                                <td>Smart LED Bulb Set</td>
-                                <td>2,876</td>
-                                <td>$143,762</td>
-                                <td style="color: #27ae60; font-weight: 600;">+12.1%</td>
-                                <td>Europe</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr style="font-weight: bold; background-color: #f8f9fa;">
-                                <td>Total</td>
-                                <td>12,058</td>
-                                <td>$1,129,747</td>
-                                <td style="color: #27ae60;">+14.2%</td>
-                                <td>-</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Project Tasks Table -->
-            <div class="table-section">
-                <h2>Project Tasks</h2>
-                <div class="table-wrapper">
-                    <table class="striped">
-                        <thead>
-                            <tr>
-                                <th>Task ID</th>
-                                <th>Task Name</th>
-                                <th>Assigned To</th>
-                                <th>Priority</th>
-                                <th>Status</th>
-                                <th>Due Date</th>
-                                <th>Progress</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#101</td>
-                                <td>Implement user authentication</td>
-                                <td>John Smith</td>
-                                <td><span class="status-badge" style="background: #f8d7da; color: #721c24;">High</span></td>
-                                <td><span class="status-badge status-completed">Completed</span></td>
-                                <td>2024-11-05</td>
-                                <td>100%</td>
-                            </tr>
-                            <tr>
-                                <td>#102</td>
-                                <td>Design landing page mockups</td>
-                                <td>Sarah Johnson</td>
-                                <td><span class="status-badge" style="background: #fff3cd; color: #856404;">Medium</span></td>
-                                <td><span class="status-badge status-active">In Progress</span></td>
-                                <td>2024-11-15</td>
-                                <td>65%</td>
-                            </tr>
-                            <tr>
-                                <td>#103</td>
-                                <td>Set up database schema</td>
-                                <td>Mike Davis</td>
-                                <td><span class="status-badge" style="background: #f8d7da; color: #721c24;">High</span></td>
-                                <td><span class="status-badge status-active">In Progress</span></td>
-                                <td>2024-11-12</td>
-                                <td>80%</td>
-                            </tr>
-                            <tr>
-                                <td>#104</td>
-                                <td>Write API documentation</td>
-                                <td>Emily Brown</td>
-                                <td><span class="status-badge" style="background: #d4edda; color: #155724;">Low</span></td>
-                                <td><span class="status-badge status-pending">Not Started</span></td>
-                                <td>2024-11-20</td>
-                                <td>0%</td>
-                            </tr>
-                            <tr>
-                                <td>#105</td>
-                                <td>Configure CI/CD pipeline</td>
-                                <td>David Wilson</td>
-                                <td><span class="status-badge" style="background: #fff3cd; color: #856404;">Medium</span></td>
-                                <td><span class="status-badge status-completed">Completed</span></td>
-                                <td>2024-11-08</td>
-                                <td>100%</td>
-                            </tr>
-                            <tr>
-                                <td>#106</td>
-                                <td>Implement payment integration</td>
-                                <td>John Smith</td>
-                                <td><span class="status-badge" style="background: #f8d7da; color: #721c24;">High</span></td>
-                                <td><span class="status-badge status-active">In Progress</span></td>
-                                <td>2024-11-18</td>
-                                <td>45%</td>
-                            </tr>
-                            <tr>
-                                <td>#107</td>
-                                <td>Create email templates</td>
-                                <td>Sarah Johnson</td>
-                                <td><span class="status-badge" style="background: #d4edda; color: #155724;">Low</span></td>
-                                <td><span class="status-badge status-pending">Not Started</span></td>
-                                <td>2024-11-25</td>
-                                <td>0%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Inventory Table -->
-            <div class="table-section">
-                <h2>Warehouse Inventory</h2>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>SKU</th>
-                                <th>Product Name</th>
-                                <th>Category</th>
-                                <th>In Stock</th>
-                                <th>Reserved</th>
-                                <th>Available</th>
-                                <th>Unit Price</th>
-                                <th>Total Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>WH-001</td>
-                                <td>Wireless Headphones Pro</td>
-                                <td>Electronics</td>
-                                <td>245</td>
-                                <td>45</td>
-                                <td style="font-weight: 600;">200</td>
-                                <td>$129.99</td>
-                                <td>$31,847.55</td>
-                            </tr>
-                            <tr>
-                                <td>CT-002</td>
-                                <td>Premium Cotton T-Shirt</td>
-                                <td>Clothing</td>
-                                <td>1,024</td>
-                                <td>124</td>
-                                <td style="font-weight: 600;">900</td>
-                                <td>$24.99</td>
-                                <td>$25,589.76</td>
-                            </tr>
-                            <tr>
-                                <td>EK-003</td>
-                                <td>Ergonomic Keyboard</td>
-                                <td>Electronics</td>
-                                <td>156</td>
-                                <td>36</td>
-                                <td style="font-weight: 600;">120</td>
-                                <td>$89.99</td>
-                                <td>$14,038.44</td>
-                            </tr>
-                            <tr>
-                                <td>SB-004</td>
-                                <td>Professional Soccer Ball</td>
-                                <td>Sports</td>
-                                <td>432</td>
-                                <td>82</td>
-                                <td style="font-weight: 600;">350</td>
-                                <td>$39.99</td>
-                                <td>$17,275.68</td>
-                            </tr>
-                            <tr>
-                                <td>BK-005</td>
-                                <td>Web Development Guide 2024</td>
-                                <td>Books</td>
-                                <td>567</td>
-                                <td>67</td>
-                                <td style="font-weight: 600;">500</td>
-                                <td>$29.99</td>
-                                <td>$17,004.33</td>
-                            </tr>
-                            <tr>
-                                <td>SL-006</td>
-                                <td>Smart LED Bulb Set</td>
-                                <td>Home & Garden</td>
-                                <td>389</td>
-                                <td>89</td>
-                                <td style="font-weight: 600;">300</td>
-                                <td>$49.99</td>
-                                <td>$19,446.11</td>
-                            </tr>
-                            <tr>
-                                <td>SW-007</td>
-                                <td>Fitness Smartwatch</td>
-                                <td>Electronics</td>
-                                <td>178</td>
-                                <td>28</td>
-                                <td style="font-weight: 600;">150</td>
-                                <td>$199.99</td>
-                                <td>$35,598.22</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr style="font-weight: bold; background-color: #f8f9fa;">
-                                <td colspan="7">Total Inventory Value</td>
-                                <td>$160,800.09</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Analytics Table -->
-            <div class="table-section">
-                <h2>Website Analytics - Last 7 Days</h2>
-                <div class="table-wrapper">
-                    <table class="striped">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Page Views</th>
-                                <th>Unique Visitors</th>
-                                <th>Bounce Rate</th>
-                                <th>Avg. Session Duration</th>
-                                <th>Conversions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2024-11-10</td>
-                                <td>12,458</td>
-                                <td>8,945</td>
-                                <td>42.3%</td>
-                                <td>3m 24s</td>
-                                <td>156</td>
-                            </tr>
-                            <tr>
-                                <td>2024-11-09</td>
-                                <td>11,892</td>
-                                <td>8,432</td>
-                                <td>45.1%</td>
-                                <td>3m 12s</td>
-                                <td>142</td>
-                            </tr>
-                            <tr>
-                                <td>2024-11-08</td>
-                                <td>13,245</td>
-                                <td>9,567</td>
-                                <td>38.9%</td>
-                                <td>3m 45s</td>
-                                <td>189</td>
-                            </tr>
-                            <tr>
-                                <td>2024-11-07</td>
-                                <td>10,567</td>
-                                <td>7,834</td>
-                                <td>47.2%</td>
-                                <td>2m 58s</td>
-                                <td>124</td>
-                            </tr>
-                            <tr>
-                                <td>2024-11-06</td>
-                                <td>11,234</td>
-                                <td>8,123</td>
-                                <td>43.7%</td>
-                                <td>3m 18s</td>
-                                <td>138</td>
-                            </tr>
-                            <tr>
-                                <td>2024-11-05</td>
-                                <td>12,891</td>
-                                <td>9,245</td>
-                                <td>41.5%</td>
-                                <td>3m 32s</td>
-                                <td>167</td>
-                            </tr>
-                            <tr>
-                                <td>2024-11-04</td>
-                                <td>14,123</td>
-                                <td>10,234</td>
-                                <td>36.8%</td>
-                                <td>3m 56s</td>
-                                <td>201</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr style="font-weight: bold; background-color: #f8f9fa;">
-                                <td>Average / Total</td>
-                                <td>86,410</td>
-                                <td>62,380</td>
-                                <td>42.2%</td>
-                                <td>3m 25s</td>
-                                <td>1,117</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
+    <!-- User Table -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">User Management</h2>
+        <div class="Ov(a)">
+            <table class="W(100%) Bdcl(c)">
+                <thead>
+                    <tr class="Bgc(#f5f5f7) Bdb(2px,s,#d2d2d7)">
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">ID</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Name</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Email</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Role</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Status</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Joined Date</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">001</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">John Smith</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">john.smith@example.com</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Administrator</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">Active</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2023-01-15</td>
+                        <td class="P(12px,16px)">{% include components/button.html url="#" text="Edit" %}</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">002</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Sarah Johnson</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">sarah.j@example.com</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Editor</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">Active</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2023-02-20</td>
+                        <td class="P(12px,16px)">{% include components/button.html url="#" text="Edit" %}</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">003</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Mike Davis</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">mike.davis@example.com</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Viewer</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#fff3cd) C(#856404)">Pending</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2023-03-10</td>
+                        <td class="P(12px,16px)">{% include components/button.html url="#" text="Edit" %}</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">004</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Emily Brown</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">emily.b@example.com</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Editor</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">Active</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2023-04-05</td>
+                        <td class="P(12px,16px)">{% include components/button.html url="#" text="Edit" %}</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">005</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">David Wilson</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">david.w@example.com</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Viewer</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#f8d7da) C(#721c24)">Inactive</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2023-05-18</td>
+                        <td class="P(12px,16px)">{% include components/button.html url="#" text="Edit" %}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </main>
+    </div>
+
+    <!-- Sales Data Table -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Sales Report Q4 2024</h2>
+        <div class="Ov(a)">
+            <table class="W(100%) Bdcl(c)">
+                <thead>
+                    <tr class="Bgc(#f5f5f7) Bdb(2px,s,#d2d2d7)">
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Product</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Units Sold</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Revenue</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Growth</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Region</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Wireless Headphones Pro</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">1,245</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$161,835</td>
+                        <td class="P(12px,16px) Fz(17px) C(#34c759) Fw(600)">+15.3%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">North America</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Fitness Smartwatch</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2,108</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$421,589</td>
+                        <td class="P(12px,16px) Fz(17px) C(#34c759) Fw(600)">+22.7%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Europe</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Ergonomic Keyboard</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">876</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$78,832</td>
+                        <td class="P(12px,16px) Fz(17px) C(#ff3b30) Fw(600)">-5.2%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Asia Pacific</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Travel Backpack Pro</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">1,532</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$84,259</td>
+                        <td class="P(12px,16px) Fz(17px) C(#34c759) Fw(600)">+8.9%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">North America</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Gaming Controller</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3,421</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$239,470</td>
+                        <td class="P(12px,16px) Fz(17px) C(#34c759) Fw(600)">+31.5%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Global</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Smart LED Bulb Set</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2,876</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$143,762</td>
+                        <td class="P(12px,16px) Fz(17px) C(#34c759) Fw(600)">+12.1%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Europe</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="Fw(b) Bgc(#f5f5f7) Bdt(2px,s,#d2d2d7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Total</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">12,058</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$1,129,747</td>
+                        <td class="P(12px,16px) Fz(17px) C(#34c759)">+14.2%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">-</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- Project Tasks Table -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Project Tasks</h2>
+        <div class="Ov(a)">
+            <table class="W(100%) Bdcl(c)">
+                <thead>
+                    <tr class="Bgc(#f5f5f7) Bdb(2px,s,#d2d2d7)">
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Task ID</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Task Name</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Assigned To</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Priority</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Status</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Due Date</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#101</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Implement user authentication</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">John Smith</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#f8d7da) C(#721c24)">High</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d1ecf1) C(#0c5460)">Completed</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-05</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">100%</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#102</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Design landing page mockups</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Sarah Johnson</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#fff3cd) C(#856404)">Medium</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">In Progress</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-15</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">65%</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#103</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Set up database schema</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Mike Davis</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#f8d7da) C(#721c24)">High</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">In Progress</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-12</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">80%</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#104</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Write API documentation</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Emily Brown</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">Low</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#fff3cd) C(#856404)">Not Started</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-20</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">0%</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#105</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Configure CI/CD pipeline</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">David Wilson</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#fff3cd) C(#856404)">Medium</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d1ecf1) C(#0c5460)">Completed</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-08</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">100%</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#106</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Implement payment integration</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">John Smith</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#f8d7da) C(#721c24)">High</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">In Progress</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-18</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">45%</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">#107</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Create email templates</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Sarah Johnson</td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#d4edda) C(#155724)">Low</span></td>
+                        <td class="P(12px,16px)"><span class="P(4px,12px) Bdrs(20px) Fz(14px) Fw(600) Bgc(#fff3cd) C(#856404)">Not Started</span></td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-25</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">0%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Inventory Table -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Warehouse Inventory</h2>
+        <div class="Ov(a)">
+            <table class="W(100%) Bdcl(c)">
+                <thead>
+                    <tr class="Bgc(#f5f5f7) Bdb(2px,s,#d2d2d7)">
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">SKU</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Product Name</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Category</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">In Stock</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Reserved</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Available</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Unit Price</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Total Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">WH-001</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Wireless Headphones Pro</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Electronics</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">245</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">45</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">200</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$129.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$31,847.55</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">CT-002</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Premium Cotton T-Shirt</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Clothing</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">1,024</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">124</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">900</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$24.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$25,589.76</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">EK-003</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Ergonomic Keyboard</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Electronics</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">156</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">36</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">120</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$89.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$14,038.44</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">SB-004</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Professional Soccer Ball</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Sports</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">432</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">82</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">350</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$39.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$17,275.68</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">BK-005</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Web Development Guide 2024</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Books</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">567</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">67</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">500</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$29.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$17,004.33</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">SL-006</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Smart LED Bulb Set</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Home & Garden</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">389</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">89</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">300</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$49.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$19,446.11</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">SW-007</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Fitness Smartwatch</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Electronics</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">178</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">28</td>
+                        <td class="P(12px,16px) Fz(17px) Fw(600) C(#1d1d1f)">150</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$199.99</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$35,598.22</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="Fw(b) Bgc(#f5f5f7) Bdt(2px,s,#d2d2d7)">
+                        <td colspan="7" class="P(12px,16px) Fz(17px) C(#1d1d1f)">Total Inventory Value</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">$160,800.09</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- Analytics Table -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Website Analytics - Last 7 Days</h2>
+        <div class="Ov(a)">
+            <table class="W(100%) Bdcl(c)">
+                <thead>
+                    <tr class="Bgc(#f5f5f7) Bdb(2px,s,#d2d2d7)">
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Date</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Page Views</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Unique Visitors</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Bounce Rate</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Avg. Session Duration</th>
+                        <th class="P(12px,16px) Fz(14px) Fw(600) C(#1d1d1f) Ta(start)">Conversions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-10</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">12,458</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">8,945</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">42.3%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 24s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">156</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-09</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">11,892</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">8,432</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">45.1%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 12s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">142</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-08</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">13,245</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">9,567</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">38.9%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 45s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">189</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-07</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">10,567</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">7,834</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">47.2%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2m 58s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">124</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-06</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">11,234</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">8,123</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">43.7%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 18s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">138</td>
+                    </tr>
+                    <tr class="Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-05</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">12,891</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">9,245</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">41.5%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 32s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">167</td>
+                    </tr>
+                    <tr class="Bgc(#f5f5f7) Bdb(1px,s,#f5f5f7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">2024-11-04</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">14,123</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">10,234</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">36.8%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 56s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">201</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="Fw(b) Bgc(#f5f5f7) Bdt(2px,s,#d2d2d7)">
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">Average / Total</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">86,410</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">62,380</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">42.2%</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">3m 25s</td>
+                        <td class="P(12px,16px) Fz(17px) C(#1d1d1f)">1,117</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</main>

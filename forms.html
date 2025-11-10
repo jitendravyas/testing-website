@@ -1,290 +1,259 @@
 ---
 layout: default
 title: Forms
-custom_css: |
-    .form-section {
-                margin-bottom: 3rem;
-            }
-            .checkbox-group,
-            .radio-group {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            .checkbox-group label,
-            .radio-group label {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                font-weight: normal;
-            }
-            .checkbox-group input,
-            .radio-group input {
-                width: auto;
-            }
-            .form-row {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1rem;
-            }
-            @media (max-width: 768px) {
-                .form-row {
-                    grid-template-columns: 1fr;
-                }
-            }
 ---
 
-<main>
-        <div class="content-wrapper">
-            <h1>Form Elements Showcase</h1>
-            <p>This page demonstrates various form elements and input types for testing purposes.</p>
+<main class="Maw(980px) M(0,a) P(60px,22px)">
+    <h1 class="Fz(48px) Lh(1.08349) Fw(600) C(#1d1d1f) Ta(c) Mb(16px)">Form Elements Showcase</h1>
+    <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73) Ta(c) Mb(48px)">This page demonstrates various form elements and input types for testing purposes.</p>
 
-            <!-- Contact Form Section -->
-            <div class="form-section">
-                <h2>Contact Form</h2>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a subject</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="support">Technical Support</option>
-                            <option value="sales">Sales Question</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Enter your message here..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+    <!-- Contact Form Section -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Contact Form</h2>
+        <form>
+            <div class="D(g) Gtc(1fr,1fr) Gap(16px) Mb(20px)">
+                <div>
+                    <label for="firstName" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                </div>
+                <div>
+                    <label for="lastName" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                </div>
             </div>
 
-            <!-- Registration Form Section -->
-            <div class="form-section">
-                <h2>Registration Form</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="username">Username *</label>
-                        <input type="text" id="username" name="username" required placeholder="Choose a username">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="password">Password *</label>
-                            <input type="password" id="password" name="password" required placeholder="Enter password">
-                        </div>
-                        <div class="form-group">
-                            <label for="confirmPassword">Confirm Password *</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter password">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dob">Date of Birth</label>
-                        <input type="date" id="dob" name="dob">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="age">Age</label>
-                        <input type="number" id="age" name="age" min="13" max="120" placeholder="Enter your age">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Gender</label>
-                        <div class="radio-group">
-                            <label>
-                                <input type="radio" name="gender" value="male">
-                                Male
-                            </label>
-                            <label>
-                                <input type="radio" name="gender" value="female">
-                                Female
-                            </label>
-                            <label>
-                                <input type="radio" name="gender" value="other">
-                                Other
-                            </label>
-                            <label>
-                                <input type="radio" name="gender" value="prefer-not-to-say">
-                                Prefer not to say
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="">Select your country</option>
-                            <option value="us">United States</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="ca">Canada</option>
-                            <option value="au">Australia</option>
-                            <option value="de">Germany</option>
-                            <option value="fr">France</option>
-                            <option value="jp">Japan</option>
-                            <option value="in">India</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Interests</label>
-                        <div class="checkbox-group">
-                            <label>
-                                <input type="checkbox" name="interests" value="technology">
-                                Technology
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="sports">
-                                Sports
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="music">
-                                Music
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="arts">
-                                Arts & Culture
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="travel">
-                                Travel
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="food">
-                                Food & Cooking
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="terms" required>
-                            I agree to the Terms and Conditions *
-                        </label>
-                    </div>
-
-                    <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="newsletter">
-                            Subscribe to our newsletter
-                        </label>
-                    </div>
-
-                    <button type="submit" class="btn">Register</button>
-                </form>
+            <div class="Mb(20px)">
+                <label for="email" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
             </div>
 
-            <!-- Additional Input Types Section -->
-            <div class="form-section">
-                <h2>Additional Input Types</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="url">Website URL</label>
-                        <input type="url" id="url" name="url" placeholder="https://example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="color">Favorite Color</label>
-                        <input type="color" id="color" name="color" value="#3498db">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="range">Satisfaction Level (1-10)</label>
-                        <input type="range" id="range" name="range" min="1" max="10" value="5">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="time">Preferred Time</label>
-                        <input type="time" id="time" name="time">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="datetime">Appointment Date & Time</label>
-                        <input type="datetime-local" id="datetime" name="datetime">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="file">Upload File</label>
-                        <input type="file" id="file" name="file">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="search">Search</label>
-                        <input type="search" id="search" name="search" placeholder="Search...">
-                    </div>
-
-                    <button type="submit" class="btn">Submit</button>
-                    <button type="reset" class="btn btn-secondary">Reset Form</button>
-                </form>
+            <div class="Mb(20px)">
+                <label for="phone" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
             </div>
 
-            <!-- Feedback Form Section -->
-            <div class="form-section">
-                <h2>Feedback Form</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="overall-rating">Overall Rating</label>
-                        <select id="overall-rating" name="overall-rating">
-                            <option value="5">5 - Excellent</option>
-                            <option value="4">4 - Very Good</option>
-                            <option value="3" selected>3 - Good</option>
-                            <option value="2">2 - Fair</option>
-                            <option value="1">1 - Poor</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="feedback">Your Feedback</label>
-                        <textarea id="feedback" name="feedback" rows="6" placeholder="Please share your thoughts..."></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Would you recommend us?</label>
-                        <div class="radio-group">
-                            <label>
-                                <input type="radio" name="recommend" value="yes">
-                                Yes
-                            </label>
-                            <label>
-                                <input type="radio" name="recommend" value="no">
-                                No
-                            </label>
-                            <label>
-                                <input type="radio" name="recommend" value="maybe">
-                                Maybe
-                            </label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-success">Submit Feedback</button>
-                </form>
+            <div class="Mb(20px)">
+                <label for="subject" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Subject *</label>
+                <select id="subject" name="subject" required class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
-        </div>
-    </main>
+
+            <div class="Mb(20px)">
+                <label for="message" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your message here..." class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)"></textarea>
+            </div>
+
+            {% include components/button.html url="#" text="Send Message" %}
+        </form>
+    </div>
+
+    <!-- Registration Form Section -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Registration Form</h2>
+        <form>
+            <div class="Mb(20px)">
+                <label for="username" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Username *</label>
+                <input type="text" id="username" name="username" required placeholder="Choose a username" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="D(g) Gtc(1fr,1fr) Gap(16px) Mb(20px)">
+                <div>
+                    <label for="password" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Password *</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                </div>
+                <div>
+                    <label for="confirmPassword" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Confirm Password *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter password" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                </div>
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="dob" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="age" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Age</label>
+                <input type="number" id="age" name="age" min="13" max="120" placeholder="Enter your age" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Gender</label>
+                <div class="D(f) Fxd(c) Gap(8px)">
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="gender" value="prefer-not-to-say">
+                        Prefer not to say
+                    </label>
+                </div>
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="country" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Country</label>
+                <select id="country" name="country" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                    <option value="au">Australia</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="jp">Japan</option>
+                    <option value="in">India</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="Mb(20px)">
+                <label class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Interests</label>
+                <div class="D(f) Fxd(c) Gap(8px)">
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="checkbox" name="interests" value="technology">
+                        Technology
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="checkbox" name="interests" value="sports">
+                        Sports
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="checkbox" name="interests" value="music">
+                        Music
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="checkbox" name="interests" value="arts">
+                        Arts & Culture
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="checkbox" name="interests" value="travel">
+                        Travel
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="checkbox" name="interests" value="food">
+                        Food & Cooking
+                    </label>
+                </div>
+            </div>
+
+            <div class="Mb(20px)">
+                <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                    <input type="checkbox" name="terms" required>
+                    I agree to the Terms and Conditions *
+                </label>
+            </div>
+
+            <div class="Mb(20px)">
+                <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                    <input type="checkbox" name="newsletter">
+                    Subscribe to our newsletter
+                </label>
+            </div>
+
+            {% include components/button.html url="#" text="Register" %}
+        </form>
+    </div>
+
+    <!-- Additional Input Types Section -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Additional Input Types</h2>
+        <form>
+            <div class="Mb(20px)">
+                <label for="url" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Website URL</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="color" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Favorite Color</label>
+                <input type="color" id="color" name="color" value="#3498db" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) H(50px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="range" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Satisfaction Level (1-10)</label>
+                <input type="range" id="range" name="range" min="1" max="10" value="5" class="W(100%)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="time" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Preferred Time</label>
+                <input type="time" id="time" name="time" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="datetime" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Appointment Date & Time</label>
+                <input type="datetime-local" id="datetime" name="datetime" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="file" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Upload File</label>
+                <input type="file" id="file" name="file" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="search" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Search</label>
+                <input type="search" id="search" name="search" placeholder="Search..." class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+            </div>
+
+            <div class="D(f) Gap(12px)">
+                {% include components/button.html url="#" text="Submit" %}
+                {% include components/button.html url="#" text="Reset Form" variant="secondary" %}
+            </div>
+        </form>
+    </div>
+
+    <!-- Feedback Form Section -->
+    <div class="Mb(48px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(24px)">Feedback Form</h2>
+        <form>
+            <div class="Mb(20px)">
+                <label for="overall-rating" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Overall Rating</label>
+                <select id="overall-rating" name="overall-rating" class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)">
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3" selected>3 - Good</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="1">1 - Poor</option>
+                </select>
+            </div>
+
+            <div class="Mb(20px)">
+                <label for="feedback" class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Your Feedback</label>
+                <textarea id="feedback" name="feedback" rows="6" placeholder="Please share your thoughts..." class="W(100%) P(12px,16px) Bd(1px,s,#d2d2d7) Bdrs(12px) Fz(17px) Bxz(bb)"></textarea>
+            </div>
+
+            <div class="Mb(20px)">
+                <label class="D(b) Mb(8px) Fz(17px) Fw(400) C(#1d1d1f)">Would you recommend us?</label>
+                <div class="D(f) Fxd(c) Gap(8px)">
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="recommend" value="yes">
+                        Yes
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="recommend" value="no">
+                        No
+                    </label>
+                    <label class="D(f) Ai(c) Gap(8px) Fw(400) Fz(17px) C(#1d1d1f)">
+                        <input type="radio" name="recommend" value="maybe">
+                        Maybe
+                    </label>
+                </div>
+            </div>
+
+            {% include components/button.html url="#" text="Submit Feedback" variant="success" %}
+        </form>
+    </div>
+</main>
