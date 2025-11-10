@@ -1,0 +1,25 @@
+# Jekyll configuration for GitHub Pages
+title: Dummy Website
+description: A demonstration website with various page types for testing purposes
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Include and exclude files
+include:
+  - _includes
+  - _layouts
+exclude:
+  - README.md
+  - .git
+  - .gitignore
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,0 +1,462 @@
+---
+layout: default
+title: Tables
+custom_css: |
+    .table-section {
+                margin-bottom: 3rem;
+            }
+            .table-wrapper {
+                overflow-x: auto;
+            }
+            .status-badge {
+                padding: 0.25rem 0.75rem;
+                border-radius: 20px;
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+            .status-active {
+                background: #d4edda;
+                color: #155724;
+            }
+            .status-pending {
+                background: #fff3cd;
+                color: #856404;
+            }
+            .status-inactive {
+                background: #f8d7da;
+                color: #721c24;
+            }
+            .status-completed {
+                background: #d1ecf1;
+                color: #0c5460;
+            }
+            table.striped tbody tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+---
+
+<main>
+        <div class="content-wrapper">
+            <h1>Data Tables</h1>
+            <p>This page demonstrates various table layouts with dummy data for testing purposes.</p>
+
+            <!-- User Table -->
+            <div class="table-section">
+                <h2>User Management</h2>
+                <div class="table-wrapper">
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Joined Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>John Smith</td>
+                                <td>john.smith@example.com</td>
+                                <td>Administrator</td>
+                                <td><span class="status-badge status-active">Active</span></td>
+                                <td>2023-01-15</td>
+                                <td>
+                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Sarah Johnson</td>
+                                <td>sarah.j@example.com</td>
+                                <td>Editor</td>
+                                <td><span class="status-badge status-active">Active</span></td>
+                                <td>2023-02-20</td>
+                                <td>
+                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Mike Davis</td>
+                                <td>mike.davis@example.com</td>
+                                <td>Viewer</td>
+                                <td><span class="status-badge status-pending">Pending</span></td>
+                                <td>2023-03-10</td>
+                                <td>
+                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>Emily Brown</td>
+                                <td>emily.b@example.com</td>
+                                <td>Editor</td>
+                                <td><span class="status-badge status-active">Active</span></td>
+                                <td>2023-04-05</td>
+                                <td>
+                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>005</td>
+                                <td>David Wilson</td>
+                                <td>david.w@example.com</td>
+                                <td>Viewer</td>
+                                <td><span class="status-badge status-inactive">Inactive</span></td>
+                                <td>2023-05-18</td>
+                                <td>
+                                    <button class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Edit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sales Data Table -->
+            <div class="table-section">
+                <h2>Sales Report Q4 2024</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Units Sold</th>
+                                <th>Revenue</th>
+                                <th>Growth</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wireless Headphones Pro</td>
+                                <td>1,245</td>
+                                <td>$161,835</td>
+                                <td style="color: #27ae60; font-weight: 600;">+15.3%</td>
+                                <td>North America</td>
+                            </tr>
+                            <tr>
+                                <td>Fitness Smartwatch</td>
+                                <td>2,108</td>
+                                <td>$421,589</td>
+                                <td style="color: #27ae60; font-weight: 600;">+22.7%</td>
+                                <td>Europe</td>
+                            </tr>
+                            <tr>
+                                <td>Ergonomic Keyboard</td>
+                                <td>876</td>
+                                <td>$78,832</td>
+                                <td style="color: #e74c3c; font-weight: 600;">-5.2%</td>
+                                <td>Asia Pacific</td>
+                            </tr>
+                            <tr>
+                                <td>Travel Backpack Pro</td>
+                                <td>1,532</td>
+                                <td>$84,259</td>
+                                <td style="color: #27ae60; font-weight: 600;">+8.9%</td>
+                                <td>North America</td>
+                            </tr>
+                            <tr>
+                                <td>Gaming Controller</td>
+                                <td>3,421</td>
+                                <td>$239,470</td>
+                                <td style="color: #27ae60; font-weight: 600;">+31.5%</td>
+                                <td>Global</td>
+                            </tr>
+                            <tr>
+                                <td>Smart LED Bulb Set</td>
+                                <td>2,876</td>
+                                <td>$143,762</td>
+                                <td style="color: #27ae60; font-weight: 600;">+12.1%</td>
+                                <td>Europe</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="font-weight: bold; background-color: #f8f9fa;">
+                                <td>Total</td>
+                                <td>12,058</td>
+                                <td>$1,129,747</td>
+                                <td style="color: #27ae60;">+14.2%</td>
+                                <td>-</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Project Tasks Table -->
+            <div class="table-section">
+                <h2>Project Tasks</h2>
+                <div class="table-wrapper">
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Task ID</th>
+                                <th>Task Name</th>
+                                <th>Assigned To</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Due Date</th>
+                                <th>Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#101</td>
+                                <td>Implement user authentication</td>
+                                <td>John Smith</td>
+                                <td><span class="status-badge" style="background: #f8d7da; color: #721c24;">High</span></td>
+                                <td><span class="status-badge status-completed">Completed</span></td>
+                                <td>2024-11-05</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>#102</td>
+                                <td>Design landing page mockups</td>
+                                <td>Sarah Johnson</td>
+                                <td><span class="status-badge" style="background: #fff3cd; color: #856404;">Medium</span></td>
+                                <td><span class="status-badge status-active">In Progress</span></td>
+                                <td>2024-11-15</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr>
+                                <td>#103</td>
+                                <td>Set up database schema</td>
+                                <td>Mike Davis</td>
+                                <td><span class="status-badge" style="background: #f8d7da; color: #721c24;">High</span></td>
+                                <td><span class="status-badge status-active">In Progress</span></td>
+                                <td>2024-11-12</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>#104</td>
+                                <td>Write API documentation</td>
+                                <td>Emily Brown</td>
+                                <td><span class="status-badge" style="background: #d4edda; color: #155724;">Low</span></td>
+                                <td><span class="status-badge status-pending">Not Started</span></td>
+                                <td>2024-11-20</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>#105</td>
+                                <td>Configure CI/CD pipeline</td>
+                                <td>David Wilson</td>
+                                <td><span class="status-badge" style="background: #fff3cd; color: #856404;">Medium</span></td>
+                                <td><span class="status-badge status-completed">Completed</span></td>
+                                <td>2024-11-08</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>#106</td>
+                                <td>Implement payment integration</td>
+                                <td>John Smith</td>
+                                <td><span class="status-badge" style="background: #f8d7da; color: #721c24;">High</span></td>
+                                <td><span class="status-badge status-active">In Progress</span></td>
+                                <td>2024-11-18</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr>
+                                <td>#107</td>
+                                <td>Create email templates</td>
+                                <td>Sarah Johnson</td>
+                                <td><span class="status-badge" style="background: #d4edda; color: #155724;">Low</span></td>
+                                <td><span class="status-badge status-pending">Not Started</span></td>
+                                <td>2024-11-25</td>
+                                <td>0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Inventory Table -->
+            <div class="table-section">
+                <h2>Warehouse Inventory</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SKU</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>In Stock</th>
+                                <th>Reserved</th>
+                                <th>Available</th>
+                                <th>Unit Price</th>
+                                <th>Total Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WH-001</td>
+                                <td>Wireless Headphones Pro</td>
+                                <td>Electronics</td>
+                                <td>245</td>
+                                <td>45</td>
+                                <td style="font-weight: 600;">200</td>
+                                <td>$129.99</td>
+                                <td>$31,847.55</td>
+                            </tr>
+                            <tr>
+                                <td>CT-002</td>
+                                <td>Premium Cotton T-Shirt</td>
+                                <td>Clothing</td>
+                                <td>1,024</td>
+                                <td>124</td>
+                                <td style="font-weight: 600;">900</td>
+                                <td>$24.99</td>
+                                <td>$25,589.76</td>
+                            </tr>
+                            <tr>
+                                <td>EK-003</td>
+                                <td>Ergonomic Keyboard</td>
+                                <td>Electronics</td>
+                                <td>156</td>
+                                <td>36</td>
+                                <td style="font-weight: 600;">120</td>
+                                <td>$89.99</td>
+                                <td>$14,038.44</td>
+                            </tr>
+                            <tr>
+                                <td>SB-004</td>
+                                <td>Professional Soccer Ball</td>
+                                <td>Sports</td>
+                                <td>432</td>
+                                <td>82</td>
+                                <td style="font-weight: 600;">350</td>
+                                <td>$39.99</td>
+                                <td>$17,275.68</td>
+                            </tr>
+                            <tr>
+                                <td>BK-005</td>
+                                <td>Web Development Guide 2024</td>
+                                <td>Books</td>
+                                <td>567</td>
+                                <td>67</td>
+                                <td style="font-weight: 600;">500</td>
+                                <td>$29.99</td>
+                                <td>$17,004.33</td>
+                            </tr>
+                            <tr>
+                                <td>SL-006</td>
+                                <td>Smart LED Bulb Set</td>
+                                <td>Home & Garden</td>
+                                <td>389</td>
+                                <td>89</td>
+                                <td style="font-weight: 600;">300</td>
+                                <td>$49.99</td>
+                                <td>$19,446.11</td>
+                            </tr>
+                            <tr>
+                                <td>SW-007</td>
+                                <td>Fitness Smartwatch</td>
+                                <td>Electronics</td>
+                                <td>178</td>
+                                <td>28</td>
+                                <td style="font-weight: 600;">150</td>
+                                <td>$199.99</td>
+                                <td>$35,598.22</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="font-weight: bold; background-color: #f8f9fa;">
+                                <td colspan="7">Total Inventory Value</td>
+                                <td>$160,800.09</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Analytics Table -->
+            <div class="table-section">
+                <h2>Website Analytics - Last 7 Days</h2>
+                <div class="table-wrapper">
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Page Views</th>
+                                <th>Unique Visitors</th>
+                                <th>Bounce Rate</th>
+                                <th>Avg. Session Duration</th>
+                                <th>Conversions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-11-10</td>
+                                <td>12,458</td>
+                                <td>8,945</td>
+                                <td>42.3%</td>
+                                <td>3m 24s</td>
+                                <td>156</td>
+                            </tr>
+                            <tr>
+                                <td>2024-11-09</td>
+                                <td>11,892</td>
+                                <td>8,432</td>
+                                <td>45.1%</td>
+                                <td>3m 12s</td>
+                                <td>142</td>
+                            </tr>
+                            <tr>
+                                <td>2024-11-08</td>
+                                <td>13,245</td>
+                                <td>9,567</td>
+                                <td>38.9%</td>
+                                <td>3m 45s</td>
+                                <td>189</td>
+                            </tr>
+                            <tr>
+                                <td>2024-11-07</td>
+                                <td>10,567</td>
+                                <td>7,834</td>
+                                <td>47.2%</td>
+                                <td>2m 58s</td>
+                                <td>124</td>
+                            </tr>
+                            <tr>
+                                <td>2024-11-06</td>
+                                <td>11,234</td>
+                                <td>8,123</td>
+                                <td>43.7%</td>
+                                <td>3m 18s</td>
+                                <td>138</td>
+                            </tr>
+                            <tr>
+                                <td>2024-11-05</td>
+                                <td>12,891</td>
+                                <td>9,245</td>
+                                <td>41.5%</td>
+                                <td>3m 32s</td>
+                                <td>167</td>
+                            </tr>
+                            <tr>
+                                <td>2024-11-04</td>
+                                <td>14,123</td>
+                                <td>10,234</td>
+                                <td>36.8%</td>
+                                <td>3m 56s</td>
+                                <td>201</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="font-weight: bold; background-color: #f8f9fa;">
+                                <td>Average / Total</td>
+                                <td>86,410</td>
+                                <td>62,380</td>
+                                <td>42.2%</td>
+                                <td>3m 25s</td>
+                                <td>1,117</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
