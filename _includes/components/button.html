@@ -1,3 +1,2 @@
-<a href="{{ include.url }}" class="btn {{ include.variant }} D(ib) P(0.75rem,1.5rem) Bgc(#3498db) C(white) Td(n) Bdrs(5px) Cur(p) Trs(all){% if include.variant == 'secondary' %} Bgc(#95a5a6){% elsif include.variant == 'success' %} Bgc(#27ae60){% endif %}">
-  {{ include.text }}
-</a>
+{% assign variant = include.variant | default: "primary" %}
+<a href="{{ include.url }}" class="D(ib) P(12px,22px) {% if variant == 'primary' %}Bgc(#0071e3) C(#fff){% elsif variant == 'secondary' %}Bgc(t) C(#0071e3) Bd(1px,s,#0071e3){% elsif variant == 'success' %}Bgc(#34c759) C(#fff){% endif %} Td(n) Bdrs(980px) Fz(17px) Lh(1.17648) Fw(400) Cur(p) Ta(c) Trs(background-color,.2s,ease)">{{ include.text }}</a>

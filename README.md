@@ -144,48 +144,37 @@ Edit `_includes/header.html` to modify navigation links.
 
 ### Styling
 
-**Custom CSS**: Edit `css/style.css` to change the global styles. Each page can also have custom CSS defined in its front matter.
+This site uses a **dual CSS approach**:
 
-**Atomizer CSS**: This site uses [Atomizer](https://acss.io/) for atomic/utility-first CSS.
+**1. Base Styles (`css/style.css`)** - Manually maintained
+- Apple-inspired design system with system fonts
+- Component styles (buttons, cards, forms, tables, navigation)
+- Typography with exact Apple specifications
+- Layout and grid systems
+- Responsive breakpoints
+- Edit this file to change the overall look and feel
 
-**How it works:**
-1. Add atomic classes directly to your HTML (e.g., `D(f)`, `Jc(c)`, `P(1rem)`)
-2. Push your changes to GitHub
-3. GitHub Actions automatically scans your HTML files
-4. Atomizer generates `css/atomic.css` with only the classes you use
-5. The generated CSS is automatically committed back to the repository
+**2. Atomizer CSS (`css/atomic.css`)** - Auto-generated (optional)
+- Utility classes generated from HTML
+- GitHub Actions automatically scans your HTML
+- Only generates CSS for classes you actually use
+- Useful for one-off utility needs
 
-**No local setup required!** Just add atomic classes to your HTML and push.
+**Primary approach: Use component styles from `style.css`**
 
-Common Atomizer classes:
-- `D(f)` - Display flex
-- `Jc(c)` - Justify content center
-- `Ai(c)` - Align items center
-- `P(1rem)` - Padding 1rem
-- `Mt(2rem)` - Margin top 2rem
-- `Mb(1rem)` - Margin bottom 1rem
-- `Gap(1rem)` - Gap 1rem (for flex/grid)
-- `Fz(1.5rem)` - Font size 1.5rem
-- `Fw(b)` - Font weight bold
-- `C(white)` - Color white
-- `Bgc(#3498db)` - Background color
-- `Ta(c)` - Text align center
-- `Bdrs(8px)` - Border radius 8px
-- `Lis(n)` - List style none
-- `Td(n)` - Text decoration none
+The site is primarily styled using the comprehensive Apple-inspired CSS in `style.css`. Use Atomizer only when you need specific utility classes not covered by the base styles.
 
-Example usage:
-```html
-<!-- Centered flex container with gap -->
-<div class="D(f) Jc(c) Ai(c) Gap(1rem)">
-  <button class="P(1rem) Bgc(#3498db) C(white) Bdrs(5px)">Click Me</button>
-</div>
+**Design System Features:**
+- **System Fonts**: Uses Apple's SF Pro and system font stack
+- **Typography**: Apple's exact font sizes and line heights
+- **Colors**: Apple's color palette (#1d1d1f, #0071e3, #f5f5f7, etc.)
+- **Spacing**: Consistent spacing scale
+- **Blur Effects**: Backdrop blur on navigation
+- **Rounded Buttons**: 980px border-radius for pill-shaped buttons
+- **Smooth Transitions**: 0.2s - 0.3s easing
+- **Clean Shadows**: Subtle box-shadows
 
-<!-- Text styling -->
-<h2 class="Fz(2rem) Fw(b) Ta(c) Mb(1rem)">Heading</h2>
-```
-
-See the [Atomizer documentation](https://acss.io/reference) for all available classes.
+Each page can also have custom CSS defined in its front matter if needed.
 
 ### Reusable Components
 

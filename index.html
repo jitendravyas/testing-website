@@ -4,67 +4,65 @@ title: Home
 ---
 
 <!-- Main Content -->
-<main>
-    <div class="content-wrapper">
-        <h1 class="text-center">Welcome to Our Dummy Website</h1>
-        <p class="text-center">This is a demonstration website with various page types for testing purposes.</p>
+<main class="Maw(980px) M(0,a) P(60px,22px)">
+    <h1 class="Fz(48px) Lh(1.08349) Fw(600) C(#1d1d1f) Ta(c) Mb(0.8em)">Welcome to Our Dummy Website</h1>
+    <p class="Fz(17px) Lh(1.47059) Fw(400) C(#1d1d1f) Ta(c) Mb(1.5em)">This is a demonstration website with various page types for testing purposes.</p>
 
-        <h2 class="mt-2">Available Pages</h2>
-        <div class="grid grid-2 mt-2">
-            {% include components/card.html
-               title="Blog Post Page"
-               description="A sample blog post page with article content, images, and typical blog layout elements."
-               button_url="blog.html"
-               button_text="Visit Blog Page"
-            %}
+    <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mt(40px) Mb(0.8em)">Available Pages</h2>
+    <div class="D(g) Gap(20px) Gtc(repeat(auto-fit,minmax(300px,1fr))) Mt(40px)">
+        {% include components/card.html
+           title="Blog Post Page"
+           description="A sample blog post page with article content, images, and typical blog layout elements."
+           button_url="blog.html"
+           button_text="Visit Blog Page"
+        %}
 
-            {% include components/card.html
-               title="Forms Page"
-               description="A comprehensive forms page featuring various input types, text areas, checkboxes, radio buttons, and more."
-               button_url="forms.html"
-               button_text="Visit Forms Page"
-            %}
+        {% include components/card.html
+           title="Forms Page"
+           description="A comprehensive forms page featuring various input types, text areas, checkboxes, radio buttons, and more."
+           button_url="forms.html"
+           button_text="Visit Forms Page"
+        %}
 
-            {% include components/card.html
-               title="Product Showcase"
-               description="An e-commerce style product showcase page with product cards, pricing, and call-to-action buttons."
-               button_url="products.html"
-               button_text="Visit Products Page"
-            %}
+        {% include components/card.html
+           title="Product Showcase"
+           description="An e-commerce style product showcase page with product cards, pricing, and call-to-action buttons."
+           button_url="products.html"
+           button_text="Visit Products Page"
+        %}
 
-            {% include components/card.html
-               title="SaaS Landing Page"
-               description="A modern SaaS landing page with hero section, features, pricing tiers, and testimonials."
-               button_url="saas-landing.html"
-               button_text="Visit SaaS Landing"
-            %}
+        {% include components/card.html
+           title="SaaS Landing Page"
+           description="A modern SaaS landing page with hero section, features, pricing tiers, and testimonials."
+           button_url="saas-landing.html"
+           button_text="Visit SaaS Landing"
+        %}
 
-            {% include components/card.html
-               title="Tables Page"
-               description="A data-rich page featuring various table layouts with dummy data for testing purposes."
-               button_url="tables.html"
-               button_text="Visit Tables Page"
-            %}
+        {% include components/card.html
+           title="Tables Page"
+           description="A data-rich page featuring various table layouts with dummy data for testing purposes."
+           button_url="tables.html"
+           button_text="Visit Tables Page"
+        %}
 
-            {% include components/card.html
-               title="About This Site"
-               description="This dummy website is created for testing and demonstration purposes. Each page showcases different web elements and layouts."
-               button_url="#"
-               button_text="Learn More"
-               button_variant="secondary"
-            %}
-        </div>
+        {% include components/card.html
+           title="About This Site"
+           description="This dummy website is created for testing and demonstration purposes. Each page showcases different web elements and layouts."
+           button_url="#"
+           button_text="Learn More"
+           button_variant="secondary"
+        %}
+    </div>
 
-        <div class="text-center mt-2">
-            <h2>Quick Links</h2>
-            <p>Navigate to any page using the menu above or the quick links below:</p>
-            <div class="D(f) Gap(1rem) Jc(c) Flw(w) Mt(1.5rem)">
-                {% include components/button.html url="blog.html" text="Blog" %}
-                {% include components/button.html url="forms.html" text="Forms" %}
-                {% include components/button.html url="products.html" text="Products" %}
-                {% include components/button.html url="saas-landing.html" text="SaaS" %}
-                {% include components/button.html url="tables.html" text="Tables" %}
-            </div>
+    <div class="Ta(c) Mt(40px)">
+        <h2 class="Fz(40px) Lh(1.1) Fw(600) C(#1d1d1f) Mb(0.8em)">Quick Links</h2>
+        <p class="Fz(17px) Lh(1.47059) Fw(400) C(#1d1d1f) Mb(1.5em)">Navigate to any page using the menu above or the quick links below:</p>
+        <div class="D(f) Gap(12px) Jc(c) Flw(w) Mt(24px)">
+            {% include components/button.html url="blog.html" text="Blog" %}
+            {% include components/button.html url="forms.html" text="Forms" %}
+            {% include components/button.html url="products.html" text="Products" %}
+            {% include components/button.html url="saas-landing.html" text="SaaS" %}
+            {% include components/button.html url="tables.html" text="Tables" %}
         </div>
     </div>
 </main>

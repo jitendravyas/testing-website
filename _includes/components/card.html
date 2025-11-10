@@ -1,6 +1,6 @@
-<div class="card Bgc(white) Bdrs(8px) P(1.5rem) Bxsh(light) Mb(1.5rem)">
-  <h3 class="Mb(1rem) C(#2c3e50)">{{ include.title }}</h3>
-  <p class="Mb(1rem)">{{ include.description }}</p>
+<div class="Bgc(#fbfbfd) Bdrs(18px) P(40px) Bxsh(2px,4px,12px,rgba(0,0,0,0.08)) Mb(20px) Trs(transform,.3s,ease,box-shadow,.3s,ease)">
+  <h3 class="Fz(24px) Lh(1.16667) Fw(600) C(#1d1d1f) Mb(8px)">{{ include.title }}</h3>
+  <p class="Fz(17px) Lh(1.47059) Fw(400) C(#6e6e73) Mb(20px)">{{ include.description }}</p>
   {% if include.button_text and include.button_url %}
     {% include components/button.html
        url=include.button_url
