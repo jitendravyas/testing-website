@@ -146,31 +146,46 @@ Edit `_includes/header.html` to modify navigation links.
 
 **Custom CSS**: Edit `css/style.css` to change the global styles. Each page can also have custom CSS defined in its front matter.
 
-**Atomizer CSS**: The site includes `css/atomic.css` with utility classes for rapid styling. Use atomic classes directly in your HTML:
+**Atomizer CSS**: This site uses [Atomizer](https://acss.io/) for atomic/utility-first CSS.
 
-Examples:
+**How it works:**
+1. Add atomic classes directly to your HTML (e.g., `D(f)`, `Jc(c)`, `P(1rem)`)
+2. Push your changes to GitHub
+3. GitHub Actions automatically scans your HTML files
+4. Atomizer generates `css/atomic.css` with only the classes you use
+5. The generated CSS is automatically committed back to the repository
+
+**No local setup required!** Just add atomic classes to your HTML and push.
+
+Common Atomizer classes:
 - `D(f)` - Display flex
 - `Jc(c)` - Justify content center
 - `Ai(c)` - Align items center
 - `P(1rem)` - Padding 1rem
 - `Mt(2rem)` - Margin top 2rem
-- `Fz(1.5rem)` - Font size 1.5rem
-- `Bgc(#3498db)` - Background color
-- `C(white)` - Color white
-- `Ta(c)` - Text align center
+- `Mb(1rem)` - Margin bottom 1rem
 - `Gap(1rem)` - Gap 1rem (for flex/grid)
+- `Fz(1.5rem)` - Font size 1.5rem
+- `Fw(b)` - Font weight bold
+- `C(white)` - Color white
+- `Bgc(#3498db)` - Background color
+- `Ta(c)` - Text align center
+- `Bdrs(8px)` - Border radius 8px
+- `Lis(n)` - List style none
+- `Td(n)` - Text decoration none
 
-Common patterns:
+Example usage:
 ```html
-<!-- Centered flex container -->
+<!-- Centered flex container with gap -->
 <div class="D(f) Jc(c) Ai(c) Gap(1rem)">
-
-<!-- Card with padding and shadow -->
-<div class="P(2rem) Bdrs(8px) Bxsh(medium)">
+  <button class="P(1rem) Bgc(#3498db) C(white) Bdrs(5px)">Click Me</button>
+</div>
 
 <!-- Text styling -->
-<h2 class="Fz(2rem) Fw(b) Ta(c) Mb(1rem)">
+<h2 class="Fz(2rem) Fw(b) Ta(c) Mb(1rem)">Heading</h2>
 ```
+
+See the [Atomizer documentation](https://acss.io/reference) for all available classes.
 
 ### Adding New Pages
 1. Create a new HTML file

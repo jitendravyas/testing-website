@@ -1,0 +1,45 @@
+name: Generate Atomizer CSS
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - '**.html'
+      - 'package.json'
+      - '.github/workflows/atomizer.yml'
+
+jobs:
+  generate-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate Atomizer CSS
+        run: npm run build:atomic
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code css/atomic.css || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add css/atomic.css
+          git commit -m "Auto-generate Atomizer CSS from HTML classes"
+          git push

@@ -1,0 +1,11 @@
+{
+  "name": "testing-website",
+  "version": "1.0.0",
+  "description": "Dummy testing website with Atomizer CSS",
+  "scripts": {
+    "build:atomic": "atomizer -o css/atomic.css *.html _includes/*.html _layouts/*.html"
+  },
+  "devDependencies": {
+    "atomizer": "^3.5.0"
+  }
+}
