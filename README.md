@@ -18,6 +18,7 @@ This website includes the following page types:
 - **Jekyll** - Static site generator (GitHub Pages compatible)
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with flexbox and grid layouts
+- **Atomizer CSS** - Atomic/utility-first CSS library for rapid styling
 - **Responsive Design** - Mobile-friendly layouts
 
 ## Project Structure
@@ -31,7 +32,8 @@ testing-website/
 ├── _layouts/            # Page layouts
 │   └── default.html     # Default layout template
 ├── css/                 # Stylesheets
-│   └── style.css        # Main stylesheet
+│   ├── style.css        # Main stylesheet
+│   └── atomic.css       # Atomizer CSS utility classes
 ├── images/              # Image assets
 ├── index.html           # Homepage
 ├── blog.html            # Blog post page
@@ -141,7 +143,34 @@ jekyll serve
 Edit `_includes/header.html` to modify navigation links.
 
 ### Styling
-Edit `css/style.css` to change the global styles. Each page can also have custom CSS defined in its front matter.
+
+**Custom CSS**: Edit `css/style.css` to change the global styles. Each page can also have custom CSS defined in its front matter.
+
+**Atomizer CSS**: The site includes `css/atomic.css` with utility classes for rapid styling. Use atomic classes directly in your HTML:
+
+Examples:
+- `D(f)` - Display flex
+- `Jc(c)` - Justify content center
+- `Ai(c)` - Align items center
+- `P(1rem)` - Padding 1rem
+- `Mt(2rem)` - Margin top 2rem
+- `Fz(1.5rem)` - Font size 1.5rem
+- `Bgc(#3498db)` - Background color
+- `C(white)` - Color white
+- `Ta(c)` - Text align center
+- `Gap(1rem)` - Gap 1rem (for flex/grid)
+
+Common patterns:
+```html
+<!-- Centered flex container -->
+<div class="D(f) Jc(c) Ai(c) Gap(1rem)">
+
+<!-- Card with padding and shadow -->
+<div class="P(2rem) Bdrs(8px) Bxsh(medium)">
+
+<!-- Text styling -->
+<h2 class="Fz(2rem) Fw(b) Ta(c) Mb(1rem)">
+```
 
 ### Adding New Pages
 1. Create a new HTML file
