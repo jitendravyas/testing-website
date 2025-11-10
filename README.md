@@ -187,6 +187,85 @@ Example usage:
 
 See the [Atomizer documentation](https://acss.io/reference) for all available classes.
 
+### Reusable Components
+
+The site uses Jekyll includes to create reusable components that eliminate HTML and Atomizer class duplication. All components are in `_includes/components/`.
+
+**Available Components:**
+
+**1. Button Component**
+```html
+{% include components/button.html
+   url="blog.html"
+   text="Read Blog"
+   variant="primary"
+%}
+
+<!-- Variants: primary (default), secondary, success -->
+```
+
+**2. Card Component**
+```html
+{% include components/card.html
+   title="My Card Title"
+   description="Card description text goes here."
+   button_url="page.html"
+   button_text="Learn More"
+   button_variant="secondary"
+%}
+```
+
+**3. Nav Link Component**
+```html
+{% include components/nav-link.html
+   page="about.html"
+   text="About"
+%}
+```
+
+**4. Section Heading Component**
+```html
+{% include components/section-heading.html
+   text="My Section Title"
+   align="c"
+   mt="2rem"
+%}
+```
+
+**5. Alert/Message Box Component**
+```html
+{% include components/alert.html
+   type="success"
+   title="Success!"
+   message="Your form was submitted successfully."
+%}
+
+<!-- Types: info (default), success, warning, error -->
+```
+
+**6. Flex Container Component**
+```html
+{% capture content %}
+  <div>Item 1</div>
+  <div>Item 2</div>
+{% endcapture %}
+
+{% include components/flex-container.html
+   content=content
+   gap="1rem"
+   justify="c"
+   align="c"
+   wrap="w"
+%}
+```
+
+**Benefits of using components:**
+- No HTML duplication
+- Atomizer classes defined once in the component
+- Change styling in one place, updates everywhere
+- Easier to maintain and update
+- Consistent design across the site
+
 ### Adding New Pages
 1. Create a new HTML file
 2. Add Jekyll front matter at the top:

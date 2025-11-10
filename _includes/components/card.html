@@ -1,0 +1,11 @@
+<div class="card Bgc(white) Bdrs(8px) P(1.5rem) Bxsh(light) Mb(1.5rem)">
+  <h3 class="Mb(1rem) C(#2c3e50)">{{ include.title }}</h3>
+  <p class="Mb(1rem)">{{ include.description }}</p>
+  {% if include.button_text and include.button_url %}
+    {% include components/button.html
+       url=include.button_url
+       text=include.button_text
+       variant=include.button_variant
+    %}
+  {% endif %}
+</div>

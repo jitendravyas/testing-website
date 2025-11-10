@@ -1,0 +1,25 @@
+{% assign type = include.type | default: "info" %}
+{% if type == "success" %}
+  {% assign bg_color = "#d4edda" %}
+  {% assign text_color = "#155724" %}
+  {% assign border_color = "#27ae60" %}
+{% elsif type == "warning" %}
+  {% assign bg_color = "#fff3cd" %}
+  {% assign text_color = "#856404" %}
+  {% assign border_color = "#f39c12" %}
+{% elsif type == "error" %}
+  {% assign bg_color = "#f8d7da" %}
+  {% assign text_color = "#721c24" %}
+  {% assign border_color = "#e74c3c" %}
+{% else %}
+  {% assign bg_color = "#d1ecf1" %}
+  {% assign text_color = "#0c5460" %}
+  {% assign border_color = "#3498db" %}
+{% endif %}
+
+<div class="P(1rem) Mb(1rem) Bdrs(5px)" style="background-color: {{ bg_color }}; color: {{ text_color }}; border-left: 4px solid {{ border_color }};">
+  {% if include.title %}
+    <strong class="D(b) Mb(0.5rem)">{{ include.title }}</strong>
+  {% endif %}
+  {{ include.message }}
+</div>

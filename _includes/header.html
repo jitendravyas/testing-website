@@ -3,12 +3,12 @@
         <h1>Dummy Website</h1>
         <nav>
             <ul class="D(f) Gap(2rem) Lis(n)">
-                <li><a href="{{ site.baseurl }}/index.html" class="C(white) Td(n)">Home</a></li>
-                <li><a href="{{ site.baseurl }}/blog.html" class="C(white) Td(n)">Blog</a></li>
-                <li><a href="{{ site.baseurl }}/forms.html" class="C(white) Td(n)">Forms</a></li>
-                <li><a href="{{ site.baseurl }}/products.html" class="C(white) Td(n)">Products</a></li>
-                <li><a href="{{ site.baseurl }}/saas-landing.html" class="C(white) Td(n)">SaaS</a></li>
-                <li><a href="{{ site.baseurl }}/tables.html" class="C(white) Td(n)">Tables</a></li>
+                {% include components/nav-link.html page="index.html" text="Home" %}
+                {% include components/nav-link.html page="blog.html" text="Blog" %}
+                {% include components/nav-link.html page="forms.html" text="Forms" %}
+                {% include components/nav-link.html page="products.html" text="Products" %}
+                {% include components/nav-link.html page="saas-landing.html" text="SaaS" %}
+                {% include components/nav-link.html page="tables.html" text="Tables" %}
             </ul>
         </nav>
     </div>
